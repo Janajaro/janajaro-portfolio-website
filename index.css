@@ -1,0 +1,242 @@
+.img-box {
+  height: 74vh;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img-box img {
+  position: relative;
+  width: 4vw;
+  height: fit-content;
+  align-content: center;
+  transition: width 0.4s ease;
+  filter: blur(0.4px);
+}
+
+.img-box img:hover {
+  width: 12vw;
+  z-index: 1;
+  filter: blur(0px);
+}
+
+img:nth-child(1) {
+  top: 12vh;
+  left: 32vh;
+}
+
+img:nth-child(2) {
+  top: 8vh;
+  left: 3vh;
+}
+
+img:nth-child(3) {
+  top: 5vh;
+  left: 6vh;
+}
+
+img:nth-child(4) {
+  top: -2vh;
+  left: 1vh;
+}
+
+img:nth-child(5) {
+  top: -5vh;
+  left: 60vh;
+}
+
+img:nth-child(6) {
+  top: -5vh;
+  left: 11vh;
+}
+
+img:nth-child(7) {
+  top: 15vh;
+  left: 15vh;
+}
+
+img:nth-child(8) {
+  top: 10vh;
+  left: 10vh;
+}
+
+img:nth-child(9) {
+  top: 9vh;
+  left: -15vh;
+}
+
+img:nth-child(10) {
+  top: 12vh;
+  left: 3vh;
+}
+
+img:nth-child(11) {
+  top: 14vh;
+  left: 8vh;
+}
+
+img:nth-child(12) {
+  top: -2vh;
+  left: -20vh;
+}
+
+img:nth-child(13) {
+  top: 22vh;
+  left: -18vh;
+}
+
+img:nth-child(14) {
+  top: 25vh;
+  left: 0vh;
+}
+
+img:nth-child(15) {
+  top: 0vh;
+  left: -22vh;
+}
+
+img:nth-child(16) {
+  top: 2vh;
+  left: -11vh;
+}
+
+img:nth-child(17) {
+  top: 6vh;
+  left: -6vh;
+}
+
+img:nth-child(18) {
+  top: 4vh;
+  left: 6vh;
+}
+
+img:nth-child(19) {
+  top: 1vh;
+  left: -4vh;
+}
+
+img:nth-child(20) {
+  top: 21vh;
+  left: -100vh;
+}
+
+img:nth-child(21) {
+  top: 20vh;
+  left: -7vh;
+}
+
+img:nth-child(22) {
+  top: -10vh;
+  left: -50vh;
+}
+
+img:nth-child(23) {
+  top: 7vh;
+  left: 11vh;
+}
+
+img:nth-child(24) {
+  top: 21vh;
+  left: 16vh;
+}
+
+img:nth-child(25) {
+  top: 18vh;
+  left: 0vh;
+}
+
+img:nth-child(26) {
+  top: 17vh;
+  left: 25vh;
+}
+
+img:nth-child(27) {
+  top: 17vh;
+  left: 3vh;
+}
+
+img:nth-child(28) {
+  top: 14vh;
+  left: 1vh;
+}
+
+img:nth-child(29) {
+  top: 12vh;
+  left: 2vh;
+}
+
+img:nth-child(30) {
+  top: 16vh;
+  left: 8vh;
+}
+
+img:nth-child(31) {
+  top: 20vh;
+  left: 17vh;
+}
+
+img:nth-child(32) {
+  top: 18vh;
+  left: 14vh;
+}
+
+img:nth-child(33) {
+  top: 14vh;
+  left: 18vh;
+}
+
+img:nth-child(34) {
+  top: 1vh;
+  left: -4vh;
+}
+
+img:nth-child(35) {
+  top: -6vh;
+  left: -57vh;
+}
+
+img:nth-child(36) {
+  top: -22vh;
+  left: -8vh;
+}
+
+img:nth-child(37) {
+  top: -18vh;
+  left: 3vh;
+}
+
+img:nth-child(38) {
+  top: 1vh;
+  left: -4vh;
+}
+
+img:nth-child(39) {
+  top: -8vh;
+  left: -61vh;
+}
+
+img:nth-child(40) {
+  top: -10vh;
+  left: -39vh;
+}
+
+img:nth-child(41) {
+  top: 8vh;
+  left: -66vh;
+}
+
+img:nth-child(42) {
+  top: 11vh;
+  left: -15vh;
+}
+
+/*mobile screen wiev*/
+
+@media screen and (max-width:800px) {
+  img {
+    width: 12vw;
+  }
+}

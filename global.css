@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('Garamondt-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --img-gallery-margin: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: fit-content;
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  gap: 5vw;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 1vw;
+}
+
+.logo {
+  width: 55vw;
+}
+
+.JJ-logo {
+  width: 100%;
+  height: auto;
+}
+
+.JJ-logo:hover,
+.art:hover,
+.about:hover {
+  opacity: 70%;
+}
+
+footer {
+  position: fixed;
+  background-color: blue;
+  margin-top: var(--img-gallery-margin);
+  bottom: -2vh;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.runner {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  animation: runner 20s infinite linear;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.runner p {
+  color: aliceblue;
+}
+
+@keyframes runner {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*shift alt down kopíruju označený řádek a zkratka zápisu div.class>p*3*/
+
+/*mobile screen wiev*/
+
+@media screen and (max-width:800px) {
+  header {
+    flex-direction: row;
+  }
+
+  .logo {
+    width: 100vw;
+  }
+
+  .menu {
+    width: 100%;
+    order: 1;
+  }
+
+  footer {
+    bottom: -1.5vw;
+  }
+
+  .runner {
+    font-size: 0.8em;
+  }
+}

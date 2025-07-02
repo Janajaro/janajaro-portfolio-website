@@ -1,0 +1,37 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.img-gallery {
+  margin-top: var(--img-gallery-margin);
+  margin-left: var(--img-gallery-margin);
+  margin-right: var(--img-gallery-margin);
+  display: flex;
+  gap: var(--img-gallery-margin);
+}
+
+.image-gallery_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  max-width: 25%;
+  gap: var(--img-gallery-margin);
+
+}
+
+/*shift alt down kopíruju označený řádek*/
+
+/*mobile screen wiev*/
+
+@media screen and (max-width:800px) {
+
+  .img-gallery {
+    flex-direction: column;
+  }
+
+  .image-gallery_column {
+    max-width: 100%;
+  }
+}
