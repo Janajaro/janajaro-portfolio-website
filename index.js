@@ -14,10 +14,10 @@ document.addEventListener('mousemove', (event) => {
       Math.pow(mouseX - imgCenterX, 2) + Math.pow(mouseY - imgCenterY, 2),
     );
 
-    const maxDistance = 500; // Lze upravit
+    const maxDistance = 400; // Lze upravit
 
     if (distance < maxDistance) {
-      const scale = 1 + (1 - distance / maxDistance) * 0.7;
+      const scale = 1 + (1 - distance / maxDistance) * 1.1;
       img.style.transform = `scale(${scale})`;
     } else {
       img.style.transform = 'scale(1)';
@@ -25,19 +25,4 @@ document.addEventListener('mousemove', (event) => {
   });
 });
 
-/* funkce animace elm logo */
 
-const logo = document.querySelector('.JJ-logo');
-/*kvůli možnosti ukládní zpětného lomítka v poli přidána modifikace prettier v settings.json*/
-const images = [
-  'img/janajaro_logotyp/JJ01.PNG',
-  'img/janajaro_logotyp/JJ02.PNG',
-  'img/janajaro_logotyp/JJ03.PNG',
-  'img/janajaro_logotyp/JJ04.PNG',
-];
-let index = 0;
-
-setInterval(() => {
-  index = (index + 1) % images.length;
-  logo.src = images[index];
-}, 150);

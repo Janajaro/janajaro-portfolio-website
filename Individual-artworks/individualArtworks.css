@@ -1,0 +1,53 @@
+.main-content {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-size: 3vw;
+  padding: 0.9em 0.5em 0.5em 0.5em;
+  font-weight: bolder;
+  transform: scale(1);
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 1.1em;
+  flex: 1;
+}
+
+ul {
+    font-size: 1.5vw;
+    position: relative;
+    left: 10vw;
+    list-style: none;
+    line-height: 1.1em;
+    margin-top: 2em;
+    margin-bottom: 9em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.second-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+@media screen and (max-width:800px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-content,
+    .first-content {
+        max-width: 100%;
+    }
+} 
+

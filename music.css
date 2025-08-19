@@ -1,0 +1,193 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+button {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: start;
+}
+
+h2 {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: clamp(12px, 2vw, 25px);
+}
+
+h2:hover {
+  opacity: 70%;
+}
+
+.jana-music {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  max-width: 12%;
+}
+
+.txt-area,
+.txt-area-ccp,
+.txt-area-svabky,
+.txt-area-solo {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  font-size: medium;
+  padding: 0.9em 0.5em 0.5em 0.5em;
+  font-weight: bolder;
+  transform: scale(1);
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 1.1em;
+}
+
+ul {
+  list-style: none;
+}
+
+.txt-area {
+  display: flex;
+  background-color: rgb(191, 139, 239);
+  position: relative;
+  top: 0;
+  width: 80vw;
+  height: 70vh;
+  overflow: hidden;
+  font-size: 3vw;
+}
+
+.txt-area-svabky {
+  background-color: rgb(58, 95, 59);
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 30vw;
+  height: 90vh;
+  overflow: hidden;
+  font-size: 3vw;
+}
+
+.txt-area-ccp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(182, 46, 46);
+  position: absolute;
+  top: 40vh;
+  right: 15vw;
+  width: 40vw;
+  height: 60vw;
+  overflow: hidden;
+  font-size: 3vw;
+}
+
+.txt-area-ccp img {
+  width: 100%;
+}
+
+.txt-area-solo {
+  background-color: rgb(215, 219, 108);
+  position: absolute;
+  top: 33vh;
+  left: 15vw;
+  width: 40vw;
+  height: 50vh;
+  overflow: hidden;
+  font-size: 3vw;
+}
+
+i {
+  font-weight: lighter;
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  /* Zabraňuje interakci s neviditelným prvkem */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.purple {
+  color: rgb(191, 139, 239);
+}
+
+.orange {
+  color: rgb(182, 46, 46);
+}
+
+.green {
+  color: rgb(58, 95, 59);
+}
+
+.yellow {
+  color: rgb(215, 219, 108);
+}
+
+footer {
+  position: fixed;
+  background-color: blue;
+  margin-top: var(--img-gallery-margin);
+  bottom: 0;
+}
+
+a.nav-link-music:link
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.nav-link-music:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.nav-link-music:hover
+{
+   color: #ffffff;
+   text-decoration: none;
+}
+a.nav-link-music:active
+{
+   color: #000000;
+   text-decoration: none;
+}
+
+/*mobile screen wiev*/
+
+@media screen and (max-width:800px) {
+
+  .nav-btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  .txt-area,
+  .txt-area-ccp,
+  .txt-area-svabky,
+  .txt-area-solo {
+    flex-direction: column;
+    gap: 0px;
+    font-size: clamp(12px, 2vw, 25px);
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    transform: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}

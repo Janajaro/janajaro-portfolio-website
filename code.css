@@ -1,0 +1,25 @@
+.main-txt p {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  font-size: medium;
+  max-width: 75ch;
+  font-size: 3vw;
+  margin: 2% auto;        
+  padding: 0 1rem;
+  font-weight: bolder;
+  transform: scale(1);
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 1.1em;
+}
+
+ul {
+  font-family: 'Garamond', Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-size: 1.5vw;
+  max-width: 50%;
+  left: 30vw;
+  list-style: none;
+  margin: 0 10vw 10vw 10vw;
+  line-height: 1.1em;
+}
+
